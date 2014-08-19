@@ -1,0 +1,3 @@
+function Metronome() {
+	alert("counter");
+}
