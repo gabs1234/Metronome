@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:700);
+body {
+  font-family: "Dosis", sans-serif;
+  background-image: linear-gradient(180deg, #4ac1ff, #795bb0); }
+
+header {
+  width: 100%;
+  height: 24vh; }
+  header #bpm {
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    line-height: 22vh; }
+
+#bpmControle {
+  width: 100%;
+  height: 38vh; }
+  #bpmControle #minus, #bpmControle #plus {
+    width: 20vw;
+    height: 100%;
+    line-height: 38vh;
+    color: #263238;
+    font-size: 2em;
+    text-align: center;
+    float: left; }
+  #bpmControle #plus {
+    float: right; }
+  #bpmControle #subDivision {
+    width: 60vw;
+    height: 38vh;
+    line-height: 38vh;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    color: #263238;
+    font-size: 4em;
+    text-align: center;
+    background-color: #ecf0f1; }
+
+#options {
+  background-color: #263238;
+  width: 100%;
+  height: 38vh; }
+
+#repeat, #silence {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #ecf0f1;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 10vh; }

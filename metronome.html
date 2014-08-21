@@ -2,19 +2,29 @@
 <html>
 	<head>
 		<title>Metronome</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>	
 
 	<body>
 		<header>
-			<div id="bpm"></div>
-			<input type="range" min="0" max="362" name="slider">
+			<div id="bpm">100</div>
 		</header>
 
-		<div id="click">	
+		<div id="bpmControle">	
+			<div id="minus">-</div>
+			<div id="subDivision">1/4</div>
+			<div id="plus">+</div>
 		</div>
-
 		<div id="options">
+			<div id="repeat">
+				repeat: 
+			</div>
+			<div id="silence">
+				silence: 
+			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="metronome.js"></script>
 </html>
