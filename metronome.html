@@ -9,13 +9,13 @@
 
 	<body>
 		<header>
-			<div id="bpm">100</div>
+			<div id="bpm" onclick="metronome.start()">62</div>
 		</header>
 
 		<div id="bpmControle">	
-			<div id="minus">-</div>
+			<div id="minus" onClick="metronome.update('-')">-</div>
 			<div id="subDivision">1/4</div>
-			<div id="plus">+</div>
+			<div id="plus" onClick="metronome.update('+')">+</div>
 		</div>
 		<div id="options">
 			<div id="repeat">
