@@ -5,17 +5,24 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="http://code.jquery.com/jquery-latest.min.js "></script>
+		<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script src="http://julian.com/research/velocity/build/jquery.velocity.min.js"></script>
+		<script src="http://julian.com/research/velocity/build/velocity.ui.js"></script>
 	</head>	
 
 	<body>
 		<header>
-			<div id="bpm" onclick="metronome.start()">62</div>
+			<div id="bpm">62</div>
 		</header>
 
+		
+
 		<div id="bpmControle">	
-			<div id="minus" onClick="metronome.update('-')">-</div>
+			<div id="minus" onClick="metronome.subtract()">-</div>
+			<div id="counter" onClick="metronome.start()">0</div>
 			<div id="subDivision">1/4</div>
-			<div id="plus" onClick="metronome.update('+')">+</div>
+			<div id="plus" onClick="metronome.add()">+</div>
 		</div>
 		<div id="options">
 			<div id="repeat">
