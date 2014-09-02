@@ -5,14 +5,13 @@ function Metronome() {
 	this.on = false;
 	this.beatNumber = 4;
 	this.flag = 1;
-	this.subDivision = 0.25;
+	this.subDivision = 1;
 	this.timer;
-
 }
 
 Metronome.prototype.start = function() {
-	this.on = (this.on? false : true);
-	if(this.on) {
+	this.on = (this.on ? false : true);
+	if (this.on) {
 		console.log("turned on");
 		this.count();
 	}
@@ -48,7 +47,6 @@ Metronome.prototype.count = function() {
 	else {
 		this.flag = 1;
 	}
-
 }
 
 var metronome = new Metronome();
