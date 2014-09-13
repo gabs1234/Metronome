@@ -6,14 +6,10 @@ function Metronome(element) {
 	this.beatNumber = 4;
 	this.flag = 1;
 	this.subDivision = 1;
-<<<<<<< HEAD
 	//value for interval
 	this.timer;
 	this.newValue;
 	this.oldValue = element;
-=======
-	this.timer;
->>>>>>> effd126c0422fb39abc0eabcca3b73c204519123
 }
 
 Metronome.prototype.start = function() {
@@ -81,14 +77,11 @@ Metronome.prototype.count = function() {
 	if(this.flag > this.beatNumber) {
 		this.flag = 1;
 	}
-<<<<<<< HEAD
 
 	console.log(this.flag);
 	document.getElementById("beatNumber").innerHTML = this.flag;
 
 	this.flag++;
-=======
->>>>>>> effd126c0422fb39abc0eabcca3b73c204519123
 }
 
 var metronome = new Metronome(document.getElementById("bpm"));
