@@ -4,53 +4,22 @@
 		<title>Metronome</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<script src="http://code.jquery.com/jquery-latest.min.js "></script>
-		<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-		<script src="http://julian.com/research/velocity/build/jquery.velocity.min.js"></script>
-		<script src="http://julian.com/research/velocity/build/velocity.ui.js"></script>
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width">
 	</head>	
 
 	<body>
-		<header>
-			<div id="bpm">62</div>
-		</header>
+		<div id="bpm" class="active" onClick="metronome.selectedValue(this)">62</div>
 
-		
-
-		<div id="bpmControle">	
-			<div id="minus" onClick="metronome.subtract()">-</div>
-			<div id="counter" onClick="metronome.start()">0</div>
-			<div id="subDivision">1/4</div>
-			<div id="plus" onClick="metronome.add()">+</div>
+		<div id="main">	
+			<div id="beatNumber" class="unActive" onClick="metronome.selectedValue(this)">4</div>
+			<div id="subDivision" class="unActive" onClick="metronome.selectedValue(this)">1</div>
 		</div>
-		<div id="options">
-			<div id="repeat">
-				repeat: 
-				<form>
-				    <input type="radio" name="repeat" id="4"/> 
-				    <label for="4">4</label>
-				    <input type="radio" name="repeat" id="8"/>     
-				    <label for="8">8</label>
-				    <input type="radio" name="repeat" id="16"/>     
-				    <label for="16">16</label>
-				    <input type="radio" name="repeat" id="none" checked="checked"/>     
-				    <label for="none">X</label>
-				</form>
-			</div>
-			<div id="silence">
-				silence: 
-				<form>
-				    <input type="radio" name="silence" id="2"/> 
-				    <label for="2">2</label>
-				    <input type="radio" name="silence" id="4S"/>     
-				    <label for="4S">4</label>
-				    <input type="radio" name="silence" id="6"/>     
-				    <label for="6">6</label>
-				    <input type="radio" name="silence" id="noneS" checked="checked"/>     
-				    <label for="noneS">X</label>
-				</form>
-			</div>
+
+		<div id="play" onClick="metronome.start()"></div>
+
+		<div id="valueManager">
+			<div id="minus" onClick="metronome.subtract()">-</div>
+			<div id="plus" onClick="metronome.add()">+</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="metronome.js"></script>
