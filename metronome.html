@@ -8,14 +8,14 @@
 	</head>	
 
 	<body>
-		<div id="bpm" class="active" onClick="metronome.selectedValue(this)">62</div>
+		<div id="bpm" class="active" onClick="metronome.selectedValue(this)"></div>
 
 		<div id="main">	
-			<div id="beatNumber" class="unActive" onClick="metronome.selectedValue(this)">4</div>
-			<div id="subDivision" class="unActive" onClick="metronome.selectedValue(this)">1</div>
+			<div id="beatNumber" class="unActive" onClick="metronome.selectedValue(this)"></div>
+			<div id="subDivision" class="unActive" onClick="metronome.selectedValue(this)"></div>
+			<div id="click" onClick="metronome.start()"></div>
+			<div id="subClick"></div>
 		</div>
-
-		<div id="play" onClick="metronome.start()"></div>
 
 		<div id="valueManager">
 			<div id="minus" onClick="metronome.subtract()">-</div>
